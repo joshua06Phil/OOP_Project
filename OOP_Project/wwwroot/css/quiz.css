@@ -1,0 +1,18 @@
+﻿.quiz {
+    background-color: yellow;
+    opacity: 0.5;
+    width: 50%;
+    border: 5px solid #0000ff;
+    border-radius: 15px;
+    margin-left: 25%;
+ 
+}
+.quiz-score {
+    margin-right: 85%;
+    padding-top: 1%;
+}
+
+.quiz-choices{
+    padding: 5%;
+    margin-right: 60%;
+}

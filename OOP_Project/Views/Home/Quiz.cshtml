@@ -1,11 +1,24 @@
 ﻿@{
     ViewData["Title"] = "Quiz";
 }
-
+<link rel="stylesheet" href="~/css/quiz.css" asp-append-version="true" />
 @await Html.PartialAsync("Partials/Header.cshtml")
 <div class="text-center">
     <h1 class="display-4">Quiz</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <div class="quiz">
+       <div class="quiz-score">
+           <h6>Score: </h6>
+       </div>
+
+       <div class="quiz-choices">
+           <label class="choice-1">A. </labe>
+           <label class="choice-2">B. </label>
+           <label class="choice-3">C. </label>
+           <label class="choice-4"> D. </label>
+       </div>
+
+    </div>
 </div>
 
 @await Html.PartialAsync("Partials/Footer.cshtml")
