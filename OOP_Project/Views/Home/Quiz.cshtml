@@ -3,21 +3,38 @@
 }
 <link rel="stylesheet" href="~/css/quiz.css" asp-append-version="true" />
 @await Html.PartialAsync("Partials/Header.cshtml")
-<div class="text-center">
-    <h1 class="display-4">Quiz</h1>
-    
-    <div class="quiz">
-       <div class="quiz-score">
-           <h6>Score: </h6>
-       </div>
-
-       <div class="quiz-choices">
-           <label class="quiz-choice-1">A. </labe>
-           <label class="quiz-choice-2">B. </label>
-           <label class="quiz-choice-3">C. </label>
-           <label class="quiz-choice-4"> D. </label>
-       </div>
-
+<div class="quiz-container">
+<ul class="quiz">
+    <li>
+        <h4>Question Number 1: </h4>
+        <ul class="choices">
+            <li>
+                <label>
+                    <input type="radio" name="question0" value="A" /><span></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="question0" value="B" /><span></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="question0" value="C" /><span></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="question0" value="D" /><span></span>
+                </label>
+            </li>
+        </ul>
+    </li>
+    <li>
+</ul>
+    <div class="quiz-button">
+        <button class="view-results" onclick="returnScore()">Back</button>
+    <button class="view-results" onclick="returnScore()">Next</button>
     </div>
 </div>
 <script src="~/js/quiz.js" asp-append-version="true"></script>

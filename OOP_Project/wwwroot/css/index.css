@@ -1,2 +1,43 @@
 ﻿body {
 }
+
+
+.container{
+    margin: auto;
+}
+.image {
+    position: relative;
+    left: 65px;
+    top: 25px;
+    animation: myfirst 1s 1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+img{
+    float:left;
+    max-width: 350px;
+    margin-right: 100px;
+
+}
+@keyframes myfirst {
+    0% {
+        top: 30px;
+    }
+
+    25% {
+        top: 0px;
+    }
+}
+.text-box{
+    position: absolute;
+    color:white;
+    top: 150px;
+    left: 45%;
+}
+
+    .text-box h6 {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+

@@ -6,7 +6,12 @@ html {
   html {
     font-size: 16px;
   }
+
+  button{
+    font-size: 1.5rem;
+  }
 }
+
 
 html {
   position: relative;
@@ -14,5 +19,21 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    min-height: 100%;
+    background-image: url("images/AIT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 69%;
+}
+
+footer {
+    position: absolute;
+    margin-top: 40%;
+    background-color: white;
+}
+
+header{
+    color: white;
 }

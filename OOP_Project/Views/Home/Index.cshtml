@@ -1,11 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
 @await Html.PartialAsync("Partials/Header.cshtml")
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+
+
+<div class="container">
+    <div class="image">
+    <img src="~/css/images/index.png" alt="Airplane Window"/>
+    </div>
+    <div class="text-box">
+        <h6>Aircraft</h6>
+        <p>
+            An airplane is a vehicle that has wings and one or more engines <br />
+            and is capable of moving through the air. <br />
+            the word aircraft is also commonly used to refer to planes, <br />
+            though it can actually be used for other types of vehicles, such as helicopters.</p>
+    </div>
 </div>
 
 @await Html.PartialAsync("Partials/Footer.cshtml")
