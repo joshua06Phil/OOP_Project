@@ -1,0 +1,21 @@
+﻿.airplane-container{
+    position: relative;
+}
+    .airplane-container h1 {
+        position: absolute;
+        margin-top: 10%;
+        left: 39%;
+        font-size: 60px;
+        color: #FFD700;
+        font-family: "Gill Sans", sans-serif;
+        font-weight: bold;
+    }
+
+img{
+    position: absolute;
+    margin-top: 50px;
+    top: 200px;
+    left: 100px;
+    height: 250px;
+
+}

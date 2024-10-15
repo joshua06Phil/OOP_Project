@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Airplanes";
+}
+
+<link rel="stylesheet" href="~/css/airplane.css" asp-append-version="true" />
+<div class="footer">
+    @await Html.PartialAsync("Partials/Header.cshtml")
+</div>
+
+<div class="airplane-container">
+    <div class="airplane-h1">
+        <h1>Airplanes</h1>
+    </div>
+
+    <img src="~/css/images/CESNA.gif" alt="CESNA" />
+    
+</div>
+
+
+
+<div class="footer">
+@await Html.PartialAsync("Partials/Footer.cshtml")
+</div>
+<script src="~/js/quiz.js" asp-append-version="true"></script>
