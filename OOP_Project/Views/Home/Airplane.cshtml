@@ -12,13 +12,38 @@
         <h1>Airplanes</h1>
     </div>
 
-    <img src="~/css/images/CESNA.gif" alt="CESNA" />
+</div>
+<div class="menu">
+    <button class="toggle-menu"> <img src="~/css/images/CESNA.gif" alt="CESNA" /></button>
+    <ul class="menu-items">
+        <li><a href="#">Engine</a></li>
+        <li><a href="#">Propeller</a></li>
+        <li><a href="#">Landing Gear</a></li>
+        <li><a href="#">Fuselage</a></li>
+        <li><a href="#">Cockpit</a></li>
+        <li><a href="#">Wings</a></li>
+        <li><a href="#">Tail</a></li>
+        <li><a href="#">Wings</a></li>
     
+    </ul>
 </div>
 
+<script src="js/script.js"></script>
+
+
+
+<script>
+    const toggleMenu = document.querySelector(".toggle-menu");
+    const menu = document.querySelector(".menu");
+
+    toggleMenu.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+    </script>
 
 
 <div class="footer">
+       
 @await Html.PartialAsync("Partials/Footer.cshtml")
 </div>
 <script src="~/js/quiz.js" asp-append-version="true"></script>

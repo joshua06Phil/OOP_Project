@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+@await Html.PartialAsync("Partials/Header.cshtml")
+
+
+
+
+<div class="container">
+    <div class="image">
+        <img src="~/css/images/index.png" alt="Airplane Window" />
+    </div>
+    <div class="text-box">
+        <h6>ABOUT US</h6>
+        <p>
+            Welcome to our System,your trusted source  <br>
+            for all things aviation,specializing in  <br>
+            the essential components and mechanics of  <br>
+            aircrafts,particularly Cessna planes. <br>
+            Founded in 1999,our mission is to provide  <br>
+            aviation enthusiasts,pilots, and engineers  <br>
+            with top-notch knowledge and parts to ensure <br>
+            safe and efficient flying experiences. <br> <br>
+
+            With a focus on Cessna aircraft,we offer in-depth  <br>
+            expertise on the basic parts and their functions. <br>
+            Whether you’re learning about the structure of an <br>
+            airplane or seeking specific Cessna components,  <br>
+            we’re here to provide clear guidance. <br>
+
+
+        </p>
+
+    </div>
+</div>
+
+@await Html.PartialAsync("Partials/Footer.cshtml")
