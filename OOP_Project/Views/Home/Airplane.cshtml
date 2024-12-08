@@ -3,34 +3,105 @@
 }
 
 <link rel="stylesheet" href="~/css/airplane.css" asp-append-version="true" />
+
 <div class="footer">
     @await Html.PartialAsync("Partials/Header.cshtml")
 </div>
 
+
+
+
 <div class="airplane-container">
     <div class="airplane-h1">
-        <h1>Airplanes</h1>
+        <h1>Airplane</h1>
     </div>
 
-</div>
-<div class="menu">
-    <button class="toggle-menu"> <img src="~/css/images/CESNA.gif" alt="CESNA" /></button>
-    <ul class="menu-items">
-        <li><a href="#">Engine</a></li>
-        <li><a href="#">Propeller</a></li>
-        <li><a href="#">Landing Gear</a></li>
-        <li><a href="#">Fuselage</a></li>
-        <li><a href="#">Cockpit</a></li>
-        <li><a href="#">Wings</a></li>
-        <li><a href="#">Tail</a></li>
-        <li><a href="#">Wings</a></li>
-    
-    </ul>
-</div>
 
+
+
+    <div class="menu">
+        <button class="toggle-menu"> <img src="~/css/images/AIRPLANE.gif" alt="CESNA" /></button>
+        <ul class="menu-items">
+           <li>
+                <a href="#">Wings</a><span class="description">
+                    An aircraft’s wings are critical to flight through the production of lift, but they have many parts of the wing to control this lift amount and direction.
+                </span>
+            </li>
+            <li>
+                <a href="#">Tail</a><span class="description">
+                    An aircraft’s tail is mainly used for stability, as well as creating lift in combination with the wings. It’s comprised of several parts.
+                </span>
+            </li>
+            <li>
+                <a href="#">Aileron</a> <span class="description">
+                    Ailerons are a primary flight control surface which control movement about the longitudinal axis of an aircraft. “Roll” is the name of this movement. The ailerons are attached to the outboard trailing edge of each wing. Moreover, when a manual or autopilot control input is made, they move in opposite directions from one another.
+                </span>
+            </li>
+            <li>
+                <a href="#">Fuselage</a> <span class="description">
+                    An airplane's main body is called the fuselage. It is a long, cylindrical tube that houses the fuel tanks, the engines, the passengers, the cargo, the flight controls, and other internal parts. Near the front of the fuselage is where the cockpit is situated.
+
+                    This section creates a huge hollow space around the wing and tail sections and supports their structural integrity. It is important to the safety of an airplane as it has all of these important parts.
+
+                    The cockpit is a part of the fuselage. But it is frequently mistaken for a separate piece entirely due to its ability to be separated from the rest of the plane during takeoff and landing without suffering significant damage.
+
+                    Before this compartment can be detached, it has to pass tests to show that it is safe while in flight. This keeps passengers from having to leave the plane early for safety reasons.
+
+                    Additionally, the fuselage is in charge of transporting the entire cabin of an airplane, which includes all of its passengers' belongings, luggage, and other trip-related necessities.
+
+                    Hence if you ever feel that the fuselage is not working properly, just get in touch with an accredited aviation welding technician immediately.
+                </span>
+            </li>
+            <li>
+                <a href="#">Landing Gear</a><span class="description">
+                    One of an airplane's most vital components is its landing gear. It keeps the aircraft in the air and prevents it from colliding with the ground. The landing gear is lowered so that your wheels can touch down precisely at the end of a runway, protecting your aircraft from damage.
+
+                    A retractable, horizontal surface called the landing gear anchors the aircraft to the ground. Its job is to guide the plane as it comes down, and when it is pulled back, it gives the plane more lift for takeoff and landing.
+
+                    The landing gear is mostly made of carbon-fibre composite materials and springs to support the plane's weight.
+
+                    To ensure smooth takeoffs and landings, the landing gear retracts during these maneuvers. When the wings are spread out during takeoff and landing, a plane can get more lift by making the drag on them stronger.
+                </span>
+            </li>
+           
+            <li>
+                <a href="#">Engine</a> <span class="description">
+                    The engine is at the core of any aircraft and is used to provide power to the airplane to make it fly. In most airplanes, piston engines are used, which are a type of internal combustion engine. Burning fuel in an enclosed combustion chamber produces high pressure and heat that power the pistons that drive the fan.
+
+                    Most airplane engines are located on the front of the plane, supported upon an engine mount, and are driven by a series of pistons connected to a crankshaft that rotates inside the engine case.
+
+                    This cylinder bank contains cylinders that fire air into combustion chambers, each cylinder is surrounded by a piston. Because these rods generate heat, fuel vaporizes and catches fire, making a powerful burst.
+
+                    The aircraft engine is the most important and powerful part of every aircraft. If the engine malfunctions, you need to get it checked immediately by a certified aviation welding technician.
+                </span>
+            </li>
+            <li>
+                <a href="#">Propeller</a><span class="description">
+                    An aircraft’s propeller(s) are airfoils, similar to a wing, installed vertically to create thrust to drive the plane forward. Attached to the engine, they spin quickly, creating lift from the pressure difference they create, only instead of this lift causing the plane to move upwards, it drives the plane forward creating thrust. This thrust and forward motion in turn causes air to pass over the wings, creating the vertical lift..
+                </span>
+            </li>
+           
+            <li>
+                <a href="#">Spoiler</a><span class="description ">
+                    Spoilers are panels mounted on the upper surface of the wing. When extended, they serve to both increase drag and decrease lift by disrupting the airflow over the wing. Dependent upon the aircraft type, spoilers can serve as many as three distinct primary functions:
+
+                    Ground spoilers
+                    Roll spoilers
+                    (Flight) spoilers or Speedbrakes
+                </span>
+            </li>
+
+        </ul> 
+        <div class="next">
+            <a class="" asp-area="" asp-controller="Home" asp-action="Cessna">NEXT PAGE</a>
+        
+       
+    </div>
+    </div>
+   
 <script src="js/script.js"></script>
 
-
+</div>
 
 <script>
     const toggleMenu = document.querySelector(".toggle-menu");
@@ -39,11 +110,14 @@
     toggleMenu.addEventListener("click", () => {
         menu.classList.toggle("active");
     });
-    </script>
+</script>
 
 
 <div class="footer">
+
+        <div class="footer">
        
 @await Html.PartialAsync("Partials/Footer.cshtml")
 </div>
 <script src="~/js/quiz.js" asp-append-version="true"></script>
+</div>

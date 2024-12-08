@@ -1,7 +1,7 @@
-﻿.airplane-container{
+﻿.Rotorcratf-container {
     position: relative;
 }
-    .airplane-container h1 {
+    .Rotorcratf-container h1 {
         position: absolute;
         margin-top: 5%;
         left: 40%;
@@ -23,7 +23,7 @@ img {
     padding: 0;
     margin: 20%;
     position: absolute;
-    top:150%;
+    top:80%;
     left:10%;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@ img {
     }
 
     .menu-items li:nth-child(1) {
-        transform: rotate(0deg) translate(500px) rotate(0deg);
+        transform: rotate(0deg) translate(600px) rotate(0deg);
     }
 
     .menu-items li:nth-child(2) {

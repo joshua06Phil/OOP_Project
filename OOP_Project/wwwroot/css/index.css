@@ -42,3 +42,8 @@ img{
         color: #FFD700;
     }
 
+/*@media(min-width: 400px) {
+    .nav-item {
+        font-size: 300px
+    }
+}*/

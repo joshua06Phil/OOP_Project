@@ -1,15 +1,15 @@
-﻿.airplane-container{
+﻿.Airbus-container {
     position: relative;
 }
-    .airplane-container h1 {
-        position: absolute;
-        margin-top: 5%;
-        left: 40%;
-        font-size: 60px;
-        color: #FFD700;
-        font-family: "Gill Sans", sans-serif;
-        font-weight: bold;
-    }
+.Airbus-container h1 {
+    position: absolute;
+    margin-top: 5%;
+    left: 40%;
+    font-size: 60px;
+    color: #FFD700;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
 
 img {
     position: absolute;

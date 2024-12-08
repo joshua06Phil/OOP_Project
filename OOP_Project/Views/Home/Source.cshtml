@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "rotorcraft ";
+}
+
+<link rel="stylesheet" href="~/css/Source.css" asp-append-version="true" />
+<div class="footer">
+    @await Html.PartialAsync("Partials/Header.cshtml")
+</div>
+
+
+
+<div class="Rotorcratf-container">
+    <div class="Rotorcratf-h1">
+        <h1>Rotorcratf</h1>
+    </div>
+
+
+
+    <div class="menu">
+        <button class="toggle-menu"> <img src="~/css/images/source.gif" alt="Rotorcratf" /></button>
+        <ul class="menu-items">
+            <li>
+                <a href="#">Rotor Blade</a><span class="description">
+                    Rotor blades are made out of various materials, including aluminium, composite structure, and steel or titanium, with abrasion shields along the leading edge.
+                </span>
+            </li>
+            <li>
+                <a href="#">Tail Rotor</a><span class="description">
+                    The tail rotor is a smaller rotor mounted so that it rotates vertically or near-vertically at the end of the tail of a traditional single-rotor helicopter. The tail rotor's position and distance from the center of gravity allow it to develop thrust in a direction opposite that of the main rotor's rotation, thereby countering the torque effect created by the main rotor.
+         </span>
+                </li>
+            <li>
+                <a href="#">Stabilizer</a> <span class="description">
+                    The helicopter stabilizer system's purpose is to reduce pilot workload by improving basic aircraft control harmony and limiting the number of disturbances. They are especially useful when the pilot has to multitask other duties while flying, such as sling loading during search and rescue operations.
+                </span>
+            </li>
+            <li>
+                <a href="#">Main Rotor</a> <span class="description">
+                    AI Overview
+                    Learn more
+                    How Helicopters Work | HowStuffWorks
+                    A helicopter's main rotor is the rotating part that generates lift and thrust to support the helicopter's weight and counter aerodynamic drag. The main rotor system is made up of a mast, hub, and rotor blades, and is mounted on top of the helicopter's fuselage
+                </span>
+            </li>
+            <li>
+                <a href="#">Landing Skid</a><span class="description">
+                    A helicopter landing skid is a fixed landing gear system that supports a helicopter's weight when it touches the ground. Skids are located on the bottom of the helicopter and are designed to distribute the aircraft's weight, allowing for a comfortable landing.
+                </span>
+            </li>
+
+            <li>
+                <a href="#">Engine</a> <span class="description">
+                    engines are commonly used in applications that require a sustained high power output, high reliability, small size, and light weight. These include helicopters, auxiliary power units, boats and ships, tanks, hovercraft, and stationary equipment.
+                </span>
+            </li>
+            <li>
+                <a href="#">Tail Boom</a><span class="description">
+                    The tailboom has several functions. First of all, it provides the arm to the tailrotor generated anti-torque force. The tailrotor itself is housed at the end of the tailboom for this reason.
+                </span>
+            </li>
+
+            <li><a href="#">Rudder</a><span class=" description">
+                    In a helicopter, the rudder pedals, more accurately called the anti-torque pedals, control de pitch of the tail rotor to increase or decrease its thrust to rotate the helicopter about its vertical axis.
+            </span></li>
+
+        </ul>
+        <div class="next">
+            <a class="" asp-area="" asp-controller="Home" asp-action="boeing">NEXT PAGE</a>
+            </>
+        <div class="next">
+            <a class="" asp-area="" asp-controller="Home" asp-action="Cessna">BACK</a>
+            </>
+
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+
+
+
+<script>
+    const toggleMenu = document.querySelector(".toggle-menu");
+    const menu = document.querySelector(".menu");
+
+    toggleMenu.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
+
+
+<div class="footer">
+
+    <div class="footer">
+
+        @await Html.PartialAsync("Partials/Footer.cshtml")
+    </div>
+    <script src="~/js/quiz.js" asp-append-version="true"></script>
+</div>

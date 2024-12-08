@@ -41,7 +41,9 @@ header {
     width: 100%;
 }
 
-
+header, .topnav {
+    z-index: 10;
+}
     .topnav a {
         color: #f2f2f2;
         padding: 0px 16px;

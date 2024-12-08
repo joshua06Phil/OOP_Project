@@ -1,7 +1,7 @@
-﻿.airplane-container{
+﻿.Boeing-container {
     position: relative;
 }
-    .airplane-container h1 {
+    .Boeing-container h1 {
         position: absolute;
         margin-top: 5%;
         left: 40%;
@@ -12,19 +12,20 @@
     }
 
 img {
+    
     position: absolute;
     margin-top: 50px;
-    top: 200px;
-    left: 270px;
-    height: 200px;
+    top: 150px;
+    left: 360px;
+    height: 345px;
 }
 .menu-items {
     list-style: none;
     padding: 0;
     margin: 20%;
     position: absolute;
-    top:150%;
-    left:10%;
+    top:80%;
+    left:20%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -23,12 +23,37 @@ namespace OOP_Project.Controllers
             return View();
         }
 
-        public IActionResult Quiz()
+      
+       
+        public IActionResult Airplane()
+        {
+            return View();
+        }
+        public IActionResult Source()
         {
             return View();
         }
 
-        public IActionResult Airplane()
+
+        public IActionResult Cessna()
+            {
+                return View();
+            }
+
+        public IActionResult dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult Airbus()
+        {
+            return View();
+        }
+        public IActionResult boeing()
+        {
+            return View();
+        }
+        public IActionResult loginform()
         {
             return View();
         }
